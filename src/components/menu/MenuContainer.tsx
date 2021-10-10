@@ -1,7 +1,36 @@
-import React, { Component } from "react";
+import * as React from "react";
 import MenuButton from "./MenuButton";
 import Menu from "./Menu";
 
+const MenuContainer = ({
+}): JSX.Element => {
+
+    const [visible, setVisible] = React.useState<boolean>(false);
+
+    const handleMouseDown = (e) => { // This error means nothing
+        toggleMenu();
+
+        e.stopPropagation();
+    }
+
+    const toggleMenu = () => {
+        setVisible(!visible);
+    }
+
+    handleMouseDown.bind(this);
+    toggleMenu.bind(this);
+
+    return (
+        <>
+            <div><MenuButton handleMouseDown={handleMouseDown} />
+                <Menu handleMouseDown={handleMouseDown}
+                    menuVisibility={visible} />
+            </div>
+        </>
+    )
+};
+
+/*
 class MenuContainer extends Component {
 
     constructor(props, context) {
@@ -35,6 +64,6 @@ class MenuContainer extends Component {
             </div>
         );
     }
-}
+}*/
 
 export default MenuContainer;
