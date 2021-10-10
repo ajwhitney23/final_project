@@ -2,8 +2,7 @@ import * as React from "react";
 import MenuButton from "./MenuButton";
 import Menu from "./Menu";
 
-const MenuContainer = ({
-}): JSX.Element => {
+const MenuContainer = (): JSX.Element => {
 
     const [visible, setVisible] = React.useState<boolean>(false);
 
