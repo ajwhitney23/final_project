@@ -38,7 +38,7 @@ passport.use(
     {
       clientID: clientID,
       clientSecret: process.env.GITHUB_SECRET,
-      callbackURL: "/github/callback",
+      callbackURL: "https://group8webware.herokuapp.com/github/callback",
     },
     function (accessToken, refreshToken, profile, done) {
       return done(null, profile);
