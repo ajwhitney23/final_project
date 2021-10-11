@@ -277,7 +277,7 @@ const bows = [
     ascension: ["narukamis", "dismal_prism", "firm_arrowhead"],
   },
   {
-    name: "Predator",
+    name: "predator",
     fullname: {
       en: "Predator",
     },
