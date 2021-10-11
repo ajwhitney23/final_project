@@ -44,7 +44,7 @@ const LoginButton = (props: { initPrefs: () => void }): JSX.Element => {
   };
 
   const userlogin = () => {
-    window.location.href = `https://github.com/login/oauth/authorize?client_id=66f056183e981d1a11b2`;
+    window.location.href = `https://github.com/login/oauth/authorize?client_id=a93f32b8cd47d1dedbff`;
   };
 
   React.useEffect(() => {
